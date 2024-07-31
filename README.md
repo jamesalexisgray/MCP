@@ -1,2 +1,0 @@
-# MCP
-Microsoft Exam Notes
