@@ -1,0 +1,24 @@
+<h2 id="why-use-the-azure-portal">Why use the Azure portal?</h2>
+<p>The first step in hosting your web application is to create a web app (an Azure App Service app) inside your Azure subscription.</p>
+<p>There are several ways you can create a web app. You can use the Azure portal, the Azure Command Line Interface (CLI), a script, or an integrated development environment (IDE) like Visual Studio.</p>
+<p>The information in this unit discusses how to use the Azure portal to create a web app, and you'll use this information to create a web app in the next exercise. For this module, we'll demonstrate using the Azure portal because it's a graphical experience, which makes it a great learning tool. The portal helps you discover available features, add other resources, and customize existing resources.</p>
+<h2 id="what-is-azure-app-service">What is Azure App Service?</h2>
+<p>Azure App Service is a fully managed web application hosting platform. This platform as a service (PaaS) offered by Azure allows you to focus on designing and building your app while Azure takes care of the infrastructure to run and scale your applications.</p>
+<h3 id="deployment-slots">Deployment slots</h3>
+<p>Using the Azure portal, you can easily add <strong>deployment slots</strong> to an App Service web app. For instance, you can create a <strong>staging</strong> deployment slot where you can push your code to test on Azure. Once you're happy with your code, you can easily <strong>swap</strong> the staging deployment slot with the production slot. You do all this with a few mouse clicks in the Azure portal.</p>
+<p><span class="mx-imgBorder">
+</span>
+</p>
+<h3 id="continuous-integrationdeployment-support">Continuous integration/deployment support</h3>
+<p>The Azure portal provides out-of-the-box continuous integration and deployment with Azure Repos, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the preceding sources, and App Service will do the rest for you by automatically syncing your code and any future changes on the code into the web app. Furthermore, with Azure Repos, you can define your own build and release process that compiles your source code, runs the tests, builds a release, and finally deploys the release into your web app every time you commit the code. All that happens implicitly, without any need for you to intervene.</p>
+<p><span class="mx-imgBorder">
+</span>
+</p>
+<h3 id="integrated-visual-studio-publishing-and-ftp-publishing">Integrated Visual Studio publishing and FTP publishing</h3>
+<p>In addition to being able to set up continuous integration/deployment for your web app, you can always benefit from the tight integration with Visual Studio to publish your web app to Azure via Web Deploy technology. App Service also supports FTP-based publishing for more traditional workflows.</p>
+<h3 id="built-in-autoscale-support-automatic-scale-out-based-on-real-world-load">Built-in autoscale support (automatic scale-out based on real-world load)</h3>
+<p>Scaling up/down or scaling out is baked into the web app. Depending on the web app's usage, you can scale your app up/down by increasing/decreasing the resources of the underlying machine that's hosting your web app. Resources can be the number of cores or the amount of RAM available.</p>
+<p>Scaling out, on the other hand, is the ability to increase the number of machine instances that are running your web app.</p>
+<h2 id="creating-a-web-app">Creating a web app</h2>
+<p>When you're ready to run a web app on Azure, you can visit the Azure portal and create a <strong>Web App</strong> resource. Creating a web app allocates a set of hosting resources in App Service, which you can use to host any web-based application Azure supports, whether it's ASP.NET Core, Node.js, Java, Python, and so on.</p>
+<p>The Azure portal provides a wizard to create a web app. This wizard requires the following fields:</p>
