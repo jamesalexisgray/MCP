@@ -17,16 +17,16 @@ The information in this unit discusses how to use the Azure portal to create a w
 #### What is Azure App Service?
 Azure App Service is a fully managed web application hosting platform. This platform as a service (PaaS) offered by Azure allows you to focus on designing and building your app while Azure takes care of the infrastructure to run and scale your applications.
 
-##### Deployment slots
+**Deployment slots**
 Using the Azure portal, you can easily add deployment slots to an App Service web app. For instance, you can create a staging deployment slot where you can push your code to test on Azure. Once you're happy with your code, you can easily swap the staging deployment slot with the production slot. You do all this with a few mouse clicks in the Azure portal.
 
-##### Continuous integration/deployment support
+**Continuous integration/deployment support**
 The Azure portal provides out-of-the-box continuous integration and deployment with Azure Repos, GitHub, Bitbucket, FTP, or a local Git repository on your development machine. Connect your web app with any of the preceding sources, and App Service will do the rest for you by automatically syncing your code and any future changes on the code into the web app. Furthermore, with Azure Repos, you can define your own build and release process that compiles your source code, runs the tests, builds a release, and finally deploys the release into your web app every time you commit the code. All that happens implicitly, without any need for you to intervene.
 
-##### Integrated Visual Studio publishing and FTP publishing
+**Integrated Visual Studio publishing and FTP publishing**
 In addition to being able to set up continuous integration/deployment for your web app, you can always benefit from the tight integration with Visual Studio to publish your web app to Azure via Web Deploy technology. App Service also supports FTP-based publishing for more traditional workflows.
 
-##### Built-in autoscale support (automatic scale-out based on real-world load)
+**Built-in autoscale support (automatic scale-out based on real-world load)**
 Scaling up/down or scaling out is baked into the web app. Depending on the web app's usage, you can scale your app up/down by increasing/decreasing the resources of the underlying machine that's hosting your web app. Resources can be the number of cores or the amount of RAM available.
 
 Scaling out, on the other hand, is the ability to increase the number of machine instances that are running your web app.
